@@ -385,10 +385,63 @@ img {
   cursor: pointer;
   margin-left: auto;
 }
+/* .contact-container {
+  display: flex;
+}
 
+.contact-info {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+      border: none;
+      padding: 20px 0;
+      width: 100%;
+  }
+} */
 
 /* ===== FOOTER =====*/
-.footer {
+/* .footer {
   background-color: var(--second-color);
   color: #fff;
   text-align: center;
@@ -409,7 +462,93 @@ img {
 }
 .footer__copy {
   font-size: var(--smaller-font-size);
+} */
+.footer {
+  background-color: #050000;
+  padding: 30px 0;
+  text-align: center;
 }
+
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer__section {
+  flex: 1;
+}
+
+.footer__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #faf8f8;
+}
+
+.footer__subtitle {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__list li {
+  margin-bottom: 5px;
+}
+
+.footer__list a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer__list a:hover {
+  color: #fffefe;
+}
+
+.footer__social {
+  margin-top: 10px;
+}
+
+.footer__icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer__icon:hover {
+  color: #ffffff;
+}
+
+.footer__copy {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fffdfd;
+}
+.footer__contact {
+  margin-top: 10px;
+}
+
+.footer__contact .footer__icon {
+  text-decoration: none;
+  color: #faf8f8;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer__contact .footer__icon:last-child {
+  margin-right: 0;
+}
+
+.footer__contact .footer__icon:hover {
+  color: #fffbfb;
+}
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
