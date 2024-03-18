@@ -210,19 +210,19 @@ img{
         }
     }
 
-    &__img{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 260px;
-    }
-    &__blob{
-        fill: var(--first-color);
+    // &__img{
+    //     position: absolute;
+    //     right: 0;
+    //     bottom: 0;
+    //     width: 260px;
+    // }
+    // &__blob{
+    //     fill: var(--first-color);
 
-        &-img{
-            width: 360px;
-        }
-    }
+    //     &-img{
+    //         width: 360px;
+    //     }
+    // }
 }
 
 /*BUTTONS*/
