@@ -7,9 +7,9 @@
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
-  --hue-color: 224;
+  --hue-color: 340;
   --first-color: hsl(var(--hue-color), 89%, 60%);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --second-color: hsl(var(--hue-color), 56%, 100%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -29,7 +29,7 @@
 
 body {
   /* background: linear-gradient(to bottom, #ffffff 0%, #ccccff 100%); */
-   background-image: url(../img/43_6.jpg);  
+   background-image: url(../img/abstract-technology-mobile-wallpaper-connecting-dots-borders.jpg);  
   background-size: 100%;
   background-attachment: fixed;
   margin: 0;
@@ -44,6 +44,7 @@ body {
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
+   
   }
 }
 
@@ -123,7 +124,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: black;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -146,6 +147,7 @@ img {
     background-color: black;
     transition: 0.5s;
   }
+    
 }
 .nav__item {
   margin-bottom: var(--mb-4);
@@ -309,7 +311,7 @@ img {
   padding: 0.5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: 0.5rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: 0px 4px 25px rgb(243, 3, 239);
 }
 .skills__icon {
   font-size: 2rem;
@@ -356,15 +358,17 @@ img {
 .work__container {
   display:  flex;
   flex-direction: column;
+ 
 }
 .work__img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: 0px 4px 25px rgb(243, 3, 239);
   border-radius: 0.5rem;
   display: flex;
   flex-direction:  row;
   padding-right: 20px;
-  color: black;
+  color: white;
   margin-top: 5vh;
+ 
   
 }
 
@@ -374,6 +378,7 @@ img {
 .work__img video{
    height:30vh;
    width: 30vw;
+   box-shadow: #ffffff;
 }
 .work__img img:hover {
   transform: scale(1.1);
@@ -382,7 +387,8 @@ img {
   margin-left: 1vw;
 }
 .info a{
-  color: black;
+  color: white;
+ 
 }
 @media (max-width: 768px) {
   .work__img {
@@ -406,10 +412,10 @@ img {
 }
 
 .education__item {
-  background-color: #fff;
+  background-color: black;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 25px rgb(243, 3, 239);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -669,6 +675,7 @@ img {
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
+    background-image: url(../img/abstract-technology-mobile-wallpaper-connecting-dots-borders.jpg);
   }
   .section {
     padding-top: 4rem;
