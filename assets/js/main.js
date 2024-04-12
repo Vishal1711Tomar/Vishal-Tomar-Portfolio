@@ -68,4 +68,20 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
             });
         });
     });
+    window.addEventListener('load', () => 
+    {
+        const container = document.querySelector('.containers');
+        const boxes = container.querySelectorAll('.short-image-box');
+      
+        boxes.forEach(box => {
+          const randomX = Math.floor(Math.random() * (container.offsetWidth - box.offsetWidth));
+          const randomY = Math.floor(Math.random() * (container.offsetHeight - box.offsetHeight));
+          
+          box.style.top = `${randomY}px`;
+          box.style.left = `${randomX}px`;
+        });
+   }
+);
+
+      
 

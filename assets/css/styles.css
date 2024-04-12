@@ -295,6 +295,7 @@ img {
 .skills__container {
   row-gap: 2rem;
   text-align: center;
+  
 }
 .skills__subtitle {
   margin-bottom: var(--mb-2);
@@ -353,6 +354,17 @@ img {
 .skills__img {
   border-radius: 0.5rem;
 }
+.containers {
+  position: relative;
+}
+.short-image-box {
+  width: 60px; /* Adjust width as needed */
+  height: 60px; /* Adjust height as needed */
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 
 /* ===== WORK =====*/
 .work__container {
@@ -453,6 +465,21 @@ img {
   cursor: pointer;
   margin-left: auto;
 }
+.contact__input:invalid {
+  border-color: #dc3545; /* Red border for invalid input */
+}
+
+.invalid-feedback {
+  display: none;
+  color: #dc3545; /* Red color for feedback messages */
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+.contact__input:invalid + .invalid-feedback {
+  display: block;
+}
+
 /* .contact-container {
   display: flex;
 }

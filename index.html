@@ -181,7 +181,12 @@
     
                 </div>
                 
-                <div>              
+                <div class="containers">              
+                    <!-- <img src="assets/img/Skills/angular-removebg-preview.png" alt="" class="short-image-box">
+                    <img src="assets/img/Skills/js-removebg-preview.png" alt="" class="short-image-box">
+                    <img src="assets/img/Skills/Unity-removebg-preview.png" alt="" class="short-image-box">
+                    <img src="assets/img/Skills/Vscode-removebg-preview.png" alt="" class="short-image-box">
+                    <img src="assets/img/Skills/dotnet-removebg-preview.png" alt="" class="short-image-box"> -->
                     <img src="assets/img/skills.png" alt="" class="skills__img">
                 </div>
             </div>
@@ -399,7 +404,7 @@
             
                 </p>          
             </div>
-                
+           
                 
         </section>
 
@@ -409,11 +414,16 @@
             
                 <div class="contact__container bd-grid">
                     <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
-                        <input type="hidden" name="access_key" value="006ada1b-4fd5-4311-8d3c-044b6df586a7">
+                         <input type="hidden" name="access_key" value="006ada1b-4fd5-4311-8d3c-044b6df586a7"> 
                         <input type="text" name="name" placeholder="Name" class="contact__input" required>
                         <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                        <input type="tel" name="name" placeholder="Contact Number" class="contact__input" pattern="[0-9]{10}"required>
                         <textarea name="message" placeholder="Enter Your Message & Leave Your Contact Number" cols="30" rows="10" class="contact__input" required></textarea>
                         <button type="submit" class="contact__button button">Submit</button>
+                        <!-- Feedback Messages -->
+        <div class="invalid-feedback">Please fill out this field.</div>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+        <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
                     </form>
                 </div>
             </section>
