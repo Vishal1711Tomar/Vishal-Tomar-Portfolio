@@ -29,7 +29,7 @@
 
 body {
   /* background: linear-gradient(to bottom, #ffffff 0%, #ccccff 100%); */
-   background-image: url(../img/abstract-technology-mobile-wallpaper-connecting-dots-borders.jpg);  
+   background-image: url(../img/background.jpg);  
   background-size: 100%;
   background-attachment: fixed;
   margin: 0;
@@ -559,7 +559,7 @@ img {
   font-size: var(--smaller-font-size);
 } */
 .footer {
-  background-image: url(../img/Footer.jpg);
+  background-image: url(../img/backs.jpg);
   background-position-y: center;
   /* background-color: #050000; */
   padding: 30px 0;
@@ -702,7 +702,7 @@ img {
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
-    background-image: url(../img/abstract-technology-mobile-wallpaper-connecting-dots-borders.jpg);
+    background-image: url(../img/background.jpg);
   }
   .section {
     padding-top: 4rem;
