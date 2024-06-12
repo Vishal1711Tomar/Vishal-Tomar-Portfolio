@@ -411,23 +411,32 @@
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact__container bd-grid">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+            <input type="hidden" name="access_key" value="006ada1b-4fd5-4311-8d3c-044b6df586a7"> 
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" class="contact__input" required>
             
-                <div class="contact__container bd-grid">
-                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
-                         <input type="hidden" name="access_key" value="006ada1b-4fd5-4311-8d3c-044b6df586a7"> 
-                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
-                        <input type="tel" name="name" placeholder="Contact Number" class="contact__input" pattern="[0-9]{10}"required>
-                        <textarea name="message" placeholder="Enter Your Message & Leave Your Contact Number" cols="30" rows="10" class="contact__input" required></textarea>
-                        <button type="submit" class="contact__button button">Submit</button>
-                        <!-- Feedback Messages -->
-        <div class="invalid-feedback">Please fill out this field.</div>
-        <div class="invalid-feedback">Please enter a valid email address.</div>
-        <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
-                    </form>
-                </div>
-            </section>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" class="contact__input" required>
+            
+            <label for="contact_number">Contact Number</label>
+            <input type="tel" id="contact_number" name="contact_number" placeholder="Contact Number" class="contact__input" pattern="[0-9]{10}" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter Your Message " cols="30" rows="10" class="contact__input" required></textarea>
+            
+            <button type="submit" class="contact__button button">Submit</button>
+            
+            <!-- Feedback Messages -->
+            <div class="invalid-feedback">Please fill out this field.</div>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+            <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+        </form>
+    </div>
+</section>
             
             
         </main>
