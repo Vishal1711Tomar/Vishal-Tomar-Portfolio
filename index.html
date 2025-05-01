@@ -12,6 +12,9 @@
         <title>Vishal Tomar - Portfolio</title>
     </head>
     <body>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.min.js"></script>
+
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
@@ -33,6 +36,8 @@
                     </ul>
                 </div>
                 
+                  
+
                   
 
                 <div class="nav__toggle" id="nav-toggle">
@@ -241,98 +246,128 @@ daily stand-ups.
             <!--===== Projects =====-->
             <section class="work section" id="work">
                 <h2 class="section-title">Projects</h2>
-            
-                <div class="work__container bd-grid"  id="projectContainer">
-                    <a href="https://github.com/Vishal1711Tomar/DashBounceGame" class="work__img">
-    <video src="./assets/video/2DGame.mp4" controls muted></video>
-    <span class="info">
-        <h3>Bounce Dash</h3>
-        <p class="about_project">Hyper-Casual 2D Arcade Mobile Game <br>
-            • Control a bouncing ball using keyboard or swipe input. <br>
-            • Avoid obstacles like spikes and rotating blades. <br>
-            • Collect coins to score points. <br>
-            • Includes start, pause, and game over screens with animations. <br>
-            • Optimized for Android build.</p>
-    </span>
-</a>
-
-                    <a href="https://github.com/Vishal1711Tomar/Vishal-Tomar-Portfolio" class="work__img">
-                        <video src="./assets/video/Portfolio.mp4" controls muted></video>
-                        <span class="info">
-                            <h3>Portfolio</h3>
-                            <p class="about_project">
-                                Welcome to my personal portfolio, a curated collection showcasing my extensive array of projects alongside informative project videos. 
-                                Explore my experiences, certifications, and publications, providing insight into my professional journey and expertise. 
-                                Additionally, stay connected by utilizing the convenient contact form for direct communication with me. 
-                                Discover the culmination of my work and accomplishments in one convenient platform</p>
-                        </span>
-                    </a>
-                    <a href="https://github.com/Vishal1711Tomar/Zombie-Game" class="work__img">
-                        <video src="./assets/video/Zombie.mp4" controls muted></video>
-                        <span class="info">
-                            <h3>Zombie Game PC</h3>
-                            <p class="about_project">First-Person View Shooting game with Real life graphics <br>
-                                • Kill all zombies to clear each level. <br>
-                                • Currently game has 3 levels <br>
-                                • has AI enemy <br>
-                                • Under Progress</p>
-                        </span>
-                    </a>
-                    <a href="https://github.com/Vishal1711Tomar/Crashing-Crate" class="work__img">
-                        <video src="./assets/video/Crashing.mp4" controls muted></video>
-                        <span class="info">
-                            <h3>Crashing Crate</h3>
-                            <p class="about_project">Android & First-Person View Shooting game <br>
-                                • Aim and shoot at all crates. <br>
-                                • Currently game has 3 levels <br>
-                                • New route open after Shooting all crates <br>
-                                • Under Progress</p>
-                        </span>
-                    </a>
-                    
-                    <a href="https://github.com/Vishal1711Tomar/VCG-Voice-Control-Game" class="work__img">
-                        <video src="./assets/video/Voice Control.mp4" controls muted></video>
-                        <span class="info">
-                            <h3>Voice Controlled 3D Object Navigation Game</h3>
-                            <p class="about_project">A gamification prototype of playing game using voice developed for Handicapped Children. This is a Published game <br>
-                                • Block Game to collect coins<br>
-                                • Use commands Right Left Jump to control movement<br>
-                                • Prototype is ready<br>
-                            </p>
-                        </span>
-                    </a>
-                    <a href="https://github.com/Vishal1711Tomar/Augmented-Reality" class="work__img">
-                        <video src="./assets/video/augmented.mp4" controls muted></video>
-                        <span class="info">
-                            <h3>Augmented Reality Application</h3>
-                            <p class="about_project">An augmented Reality application having feature just like snapchat <br>
-                                •Application will detect a plain surface and then you can plot the characters that application have. <br>
-                                •You can also save the pictures in your gallery <br>
-                            </p>
-                        </span>
-                    </a>
-                    <a href="https://github.com/Vishal1711Tomar/BlockRun-VMUV-2.0" class="work__img">
-                        <video src="./assets/video/BlockRUn.mp4" controls muted></video>
-                        <span class="info">
-                            <h3>BlockRun</h3>
-                            <p class="about_project">A 4 level block game built as mini project. <br>
-                                • You need to reach the final point after clearing all obstacles <br>
-                                • The levels are in increasing order of their difficulty. <br>
-                                • Its a Mini Game with a full UI implementation
-                            </p>
-                        </span>
-                    </a>
-                    <a href="https://github.com/Vishal1711Tomar/Oishi-Food-Website" class="work__img">
-                        <video src="./assets/video/Oishi Food Website.mp4" controls muted></video>
-                        <span class="info">
-                            <h3>Oishi Food Website</h3>
-                            <p class="about_project">
-                                A basic food website using Angular in which the user can search food items and view details
-                                about that food by clicking the image and that food to the cart</p>
-                        </span>
-                    </a>
+                <div class="project-grid" id="projectContainer">
+              
+                  <!-- Project Card -->
+                  <div class="project-card">
+                    <div class="video-wrapper">
+                      <video src="./assets/video/2DGame.mp4" controls muted></video>
+                    </div>
+                    <div class="project-info">
+                      <h3>Bounce Dash</h3>
+                      <p>Hyper-Casual 2D Arcade Mobile Game <br>
+                        • Control a bouncing ball using keyboard or swipe input. <br>
+                        • Avoid obstacles like spikes and rotating blades. <br>
+                        • Collect coins to score points. <br>
+                        • Includes start, pause, and game over screens with animations. <br>
+                        • Optimized for Android build.</p>
+                      <a href="https://github.com/Vishal1711Tomar/DashBounceGame" class="project-link" target="_blank">Project GitHub Link</a>
+                    </div>
+                  </div>
+              
+                  <div class="project-card">
+                    <div class="video-wrapper">
+                      <video src="./assets/video/Portfolio.mp4" controls muted></video>
+                    </div>
+                    <div class="project-info">
+                      <h3>Portfolio</h3>
+                      <p>Welcome to my personal portfolio, a curated collection showcasing my extensive array of projects alongside informative project videos. 
+                        Explore my experiences, certifications, and publications, providing insight into my professional journey and expertise. 
+                        Additionally, stay connected by utilizing the convenient contact form for direct communication with me.</p>
+                      <a href="https://github.com/Vishal1711Tomar/Vishal-Tomar-Portfolio" class="project-link" target="_blank">Project GitHub Link</a>
+                    </div>
+                  </div>
+              
+                  <div class="project-card">
+                    <div class="video-wrapper">
+                      <video src="./assets/video/Zombie.mp4" controls muted></video>
+                    </div>
+                    <div class="project-info">
+                      <h3>Zombie Game PC</h3>
+                      <p>First-Person View Shooting game with real-life graphics. <br>
+                        • Kill all zombies to clear each level. <br>
+                        • Currently, the game has 3 levels. <br>
+                        • Includes AI enemies. <br>
+                        • Under Progress.</p>
+                      <a href="https://github.com/Vishal1711Tomar/Zombie-Game" class="project-link" target="_blank">Project GitHub Link</a>
+                    </div>
+                  </div>
+              
+                  <div class="project-card">
+                    <div class="video-wrapper">
+                      <video src="./assets/video/Crashing.mp4" controls muted></video>
+                    </div>
+                    <div class="project-info">
+                      <h3>Crashing Crate</h3>
+                      <p>Android First-Person Shooter game. <br>
+                        • Aim and shoot at all crates. <br>
+                        • Game has 3 levels. <br>
+                        • New route opens after shooting all crates. <br>
+                        • Under Progress.</p>
+                      <a href="https://github.com/Vishal1711Tomar/Crashing-Crate" class="project-link" target="_blank">Project GitHub Link</a>
+                    </div>
+                  </div>
+              
+                  <div class="project-card">
+                    <div class="video-wrapper">
+                      <video src="./assets/video/Voice Control.mp4" controls muted></video>
+                    </div>
+                    <div class="project-info">
+                      <h3>Voice Controlled 3D Object Navigation Game</h3>
+                      <p>A gamification prototype of playing a game using voice, developed for handicapped children. (Published game) <br>
+                        • Block game to collect coins. <br>
+                        • Use commands "Right", "Left", "Jump" to control movement. <br>
+                        • Prototype is ready.</p>
+                      <a href="https://github.com/Vishal1711Tomar/VCG-Voice-Control-Game" class="project-link" target="_blank">Project GitHub Link</a>
+                    </div>
+                  </div>
+              
+                  <div class="project-card">
+                    <div class="video-wrapper">
+                      <video src="./assets/video/augmented.mp4" controls muted></video>
+                    </div>
+                    <div class="project-info">
+                      <h3>Augmented Reality Application</h3>
+                      <p>An augmented reality application with features similar to Snapchat. <br>
+                        • Detects plain surfaces. <br>
+                        • Allows plotting of AR characters. <br>
+                        • Capture and save images to gallery.</p>
+                      <a href="https://github.com/Vishal1711Tomar/Augmented-Reality" class="project-link" target="_blank">Project GitHub Link</a>
+                    </div>
+                  </div>
+              
+                  <div class="project-card">
+                    <div class="video-wrapper">
+                      <video src="./assets/video/BlockRUn.mp4" controls muted></video>
+                    </div>
+                    <div class="project-info">
+                      <h3>BlockRun</h3>
+                      <p>A 4-level block game built as a mini-project. <br>
+                        • Reach the final point by clearing all obstacles. <br>
+                        • Levels increase in difficulty. <br>
+                        • Full UI implemented.</p>
+                      <a href="https://github.com/Vishal1711Tomar/BlockRun-VMUV-2.0" class="project-link" target="_blank">Project GitHub Link</a>
+                    </div>
+                  </div>
+              
+                  <div class="project-card">
+                    <div class="video-wrapper">
+                      <video src="./assets/video/Oishi Food Website.mp4" controls muted></video>
+                    </div>
+                    <div class="project-info">
+                      <h3>Oishi Food Website</h3>
+                      <p>A basic food website using Angular. <br>
+                        • Users can search food items. <br>
+                        • Click image to view details. <br>
+                        • Add items to cart.</p>
+                      <a href="https://github.com/Vishal1711Tomar/Oishi-Food-Website" class="project-link" target="_blank">Project GitHub Link</a>
+                    </div>
+                  </div>
+              
                 </div>
-            </section>
+              </section>
+              
+              
             
     <!-- ========Education========== -->
      <section class="education section" id="education">
@@ -535,7 +570,79 @@ daily stand-ups.
         <script src="assets/js/main.js"></script>
         
 
-       
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+        <script>
+        tsParticles.load("tsparticles", {
+          fullScreen: { enable: false },
+          fpsLimit: 60,
+          particles: {
+            number: {
+              value: 100,
+              density: {
+                enable: true,
+                area: 800
+              }
+            },
+            color: {
+              value: ["#00ffcc", "#00bfff", "#00ff00"]
+            },
+            shape: {
+              type: "circle"
+            },
+            opacity: {
+              value: 0.5,
+              random: true
+            },
+            size: {
+              value: 3,
+              random: { enable: true, minimumValue: 1 }
+            },
+            links: {
+              enable: true,
+              distance: 130,
+              color: "#00ffcc",
+              opacity: 0.4,
+              width: 1
+            },
+            move: {
+              enable: true,
+              speed: 1.5,
+              direction: "none",
+              random: false,
+              straight: false,
+              outModes: "out",
+              attract: {
+                enable: true,
+                rotateX: 600,
+                rotateY: 1200
+              }
+            }
+          },
+          interactivity: {
+            events: {
+              onHover: {
+                enable: true,
+                mode: "repulse"
+              },
+              onClick: {
+                enable: true,
+                mode: "push"
+              }
+            },
+            modes: {
+              repulse: {
+                distance: 100,
+                duration: 0.4
+              },
+              push: {
+                quantity: 4
+              }
+            }
+          },
+          detectRetina: true
+        });
+        </script>
+        
 
     </body>
 </html>
