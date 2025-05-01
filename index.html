@@ -8,6 +8,12 @@
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script
+        src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+        type="module"
+      ></script>
+
 
         <title>Vishal Tomar - Portfolio</title>
     </head>
@@ -16,185 +22,176 @@
         <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.min.js"></script>
 
         <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#about" class="nav__logo">Vishal Tomar</a>
-                </div>
+     <header class="l-header">
+  <nav class="nav bd-grid">
+    <!-- Logo Section with Lottie Animation -->
+    <div class="nav__logo-container">
+      <a href="#about" class="nav__logo">
+       
+        Vishal Tomar
+      </a>
+    </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <!-- <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li> -->
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#experience" class="nav__link">Experiences</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                        <li class="nav__item"><a href="#certificate" class="nav__link">Certifications</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        
-                    </ul>
-                </div>
-                
-                  
+    <!-- Navigation Menu -->
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+        <li class="nav__item"><a href="#experience" class="nav__link">Experiences</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+        <li class="nav__item"><a href="#certificate" class="nav__link">Certifications</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
 
-                  
+    <!-- Hamburger Menu for Mobile -->
+    <div class="nav__toggle" id="nav-toggle">
+      <i class='bx bx-menu'></i>
+    </div>
+  </nav>
+</header>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
        
 
         <main class="l-main">
         
         <!--===== ABOUT =====-->
-        <section class="about section " id="about">
+        <section class="about section" id="about">
             <h2 class="section-title">About</h2>
-
+          
             <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/ABout-removebg-preview.png" alt="">
-                </div>
-                
-                <div>
-                    <h2 class="">Hi,<br>I'm <span class="home__title-color">VISHAL TOMAR</span></h2><h4> Programmer Analyst<br> Specialized Game Developer </h4>
-                    <p class="about__text">
-                        Welcome to the world of innovation and immersive experiences! I'm a passionate game developer specializing in Unity 3D,
-                         where I craft captivating games and applications that push the boundaries of creativity and technology.
-                          With expertise in augmented reality, voice control, block games, and FPS shooting games, 
-                          I thrive on delivering unforgettable gaming adventures. Beyond gaming, 
-                          I bring a wealth of corporate experience as a programmer analyst, 
-                          delving into Dotnet, Angular, and SQL to create robust and dynamic solutions. Join me on an exciting journey where imagination meets cutting-edge technology!</p>  
-                          <a href="https://drive.google.com/file/d/1rxjdjxpJNsDzmiIjlj1DuYd1E6UzeHvj/view?usp=sharing" class="button">Download Resume</a>         
-                </div>                                   
+          
+              <!-- Image/Video Avatar -->
+              <div class="about__img">
+                <img src="assets/img/ABout-removebg-preview.png" alt="Vishal Tomar Avatar" />
+              </div>
+          
+              <!-- Text Content -->
+              <div>
+                <h2 class="about__title">
+                  Hi, I'm <span class="home__title-color">VISHAL TOMAR</span>
+                </h2>
+                <h4 class="about__role">
+                  Programmer Analyst | Specialized Game Developer
+                </h4>
+          
+                <p class="about__text">
+                  Welcome to my digital realm! As a <strong>Unity 3D game developer</strong> and <strong>tech innovator</strong>, I build immersive, cutting-edge experiences spanning <strong>AR, voice-command mechanics, FPS games,</strong> and more.
+                  <br><br>
+                  With a sharp edge in technologies like <strong>.NET Core, Angular, SQL Server,</strong> and agile methodologies, I bridge the gap between gameplay imagination and full-stack software execution.
+                  <br><br>
+                  Whether it’s crafting futuristic interfaces or engineering robust backend architectures, I thrive on blending creativity with code to deliver unforgettable, high-performance digital experiences.
+                </p>
+          
+                <a href="https://drive.google.com/file/d/1rxjdjxpJNsDzmiIjlj1DuYd1E6UzeHvj/view?usp=sharing" class="button">
+                  <i class="fas fa-file-download"></i> Download Resume
+                </a>
+              </div>
             </div>
-            <video id="background-video" autoplay loop muted>
-                <source src="/assets/video/Backgroundvideo.mp4" type="video/mp4">
-            
-                Your browser does not support the video tag.
-            </video>
-        </section>
+          
+    
+          </section>
+          
        
 
         <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+        <!--===== SKILLS =====-->
+<section class="skills section" id="skills">
+    <h2 class="section-title">Skills</h2>
 
-            <div class="skills__container bd-grid">          
-                <div>
-                    <h2 class="skills__subtitle">Profesional Skills</h2>
-                    <!-- <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p> -->
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <!-- <i class='bx bxl-html5 skills__icon'></i> -->
-                            <span class="skills__name">DOT NET</span>
-                            
-                        </div>
-                        <div class="skills_bar skills_html">
-                            <i class="fa-brands fa-java"></i>
-                        </div>
-                        <div>
-                            <span class="skills__percentage">40%</span>
-                        </div>
-                    </div>
-                     <div class="skills__data">
-                        <div class="skills__names">
-                            <!-- <i class='bx bxl-html5 skills__icon'></i> -->
-                            <span class="skills__name">React JS</span>
-                            
-                        </div>
-                        <div class="skills_bar skills_html">
-                            <i class="fa-brands fa-java"></i>
-                        </div>
-                        <div>
-                            <span class="skills__percentage">50%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <!-- <i class='bx bxl-html5 skills__icon'></i> -->
-                            <span class="skills__name">Go Lang Basics</span>
-                            
-                        </div>
-                        <div class="skills_bar skills_html">
-                            <i class="fa-brands fa-java"></i>
-                        </div>
-                        <div>
-                            <span class="skills__percentage">20%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <!-- <i class='bx bxl-html5 skills__icon'></i> -->
-                            <span class="skills__name">C/C++/C#</span>
-                            
-                        </div>
-                        <div class="skills_bar skills_C">
+    <div class="skills__container bd-grid">
+        <div>
+            <h3 class="skills__subtitle">Professional Skills</h3>
 
-                        </div>
-                        <div>
-                            <span class="skills__percentage">70%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <!-- <i class='bx bxl-css3 skills__icon'></i> -->
-                            <span class="skills__name">Angular</span>
-                        </div>
-                        <div class="skills_bar skills_css">
-                            
-                        </div>
-                        <div>
-                            <span class="skills__percentage">65%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <!-- <span><iconify-icon icon="mdi:unity"></iconify-icon></span> -->
-                            <span class="skills__name">HTML-CSS-JAVASCRIPT</span>
-                        </div>
-                        <div class="skills_bar skills_js">
-                            
-                        </div>
-                        <div>
-                            <span class="skills__percentage">75%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <!-- <span><iconify-icon icon="mdi:unity"></iconify-icon></span> -->
-                            <span class="skills__name">Unity Hub & Unity Engine</span>
-                        </div>
-                        <div class="skills_bar skills_game">
-                            
-                        </div>
-                        <div>
-                            <span class="skills__percentage">90%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <!-- <i class='bx bxs-paint skills__icon'></i> -->
-                            <span class="skills__name">SQL SERVER</span>
-                        </div>
-                        <div class="skills_bar skills_js">
-                            
-                        </div>
-                        <div>
-                            <span class="skills__percentage">65%</span>
-                        </div>
-                    </div>
-    
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-code-alt skills__icon'></i>
+                    <span class="skills__name">.NET</span>
                 </div>
-                
-                <div class="containers">              
-    
-                    <img src="assets/img/skills.png" alt="" class="skills__img">
-                </div>
+                <div class="skills_bar skills_dotnet"></div>
+                <span class="skills__percentage">40%</span>
             </div>
-        </section>
+
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-react skills__icon'></i>
+                    <span class="skills__name">React JS</span>
+                </div>
+                <div class="skills_bar skills_react"></div>
+                <span class="skills__percentage">50%</span>
+            </div>
+
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-chip skills__icon'></i>
+                    <span class="skills__name">Go Lang Basics</span>
+                </div>
+                <div class="skills_bar skills_golang"></div>
+                <span class="skills__percentage">20%</span>
+            </div>
+
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-code skills__icon'></i>
+                    <span class="skills__name">C / C++ / C#</span>
+                </div>
+                <div class="skills_bar skills_c"></div>
+                <span class="skills__percentage">70%</span>
+            </div>
+
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-angular skills__icon'></i>
+                    <span class="skills__name">Angular</span>
+                </div>
+                <div class="skills_bar skills_angular"></div>
+                <span class="skills__percentage">65%</span>
+            </div>
+
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-code-block skills__icon'></i>
+                    <span class="skills__name">HTML / CSS / JavaScript</span>
+                </div>
+                <div class="skills_bar skills_frontend"></div>
+                <span class="skills__percentage">75%</span>
+            </div>
+
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-unity skills__icon'></i>
+                    <span class="skills__name">Unity Hub & Engine</span>
+                </div>
+                <div class="skills_bar skills_unity"></div>
+                <span class="skills__percentage">90%</span>
+            </div>
+
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bx-data skills__icon'></i>
+                    <span class="skills__name">SQL Server</span>
+                </div>
+                <div class="skills_bar skills_sql"></div>
+                <span class="skills__percentage">65%</span>
+            </div>
+        </div>
+
+       <!-- Dynamic Game Dev Animation using Lottie -->
+<div class="containers">
+    <dotlottie-player
+    src="https://lottie.host/f214b511-74e4-40fd-803d-ab6aed3ef737/lACEhwG87a.lottie"
+    background="transparent"
+    speed="1"
+    style="width: 500px; height: 300px"
+    loop
+    autoplay
+  ></dotlottie-player>
+</div>
+
+    </div>
+</section>
+
         <!-- --==================Experiences------------------======================== -->
         
          <section class="about section " id="experience">
@@ -485,32 +482,52 @@ daily stand-ups.
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-    <h2 class="section-title">Contact</h2>
+                <h2 class="section-title">Contact</h2>
+            
+                <div class="contact__container bd-grid">
+                    <!-- Background image or elements related to contact -->
+                    <script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
 
-    <div class="contact__container bd-grid">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
-            <input type="hidden" name="access_key" value="006ada1b-4fd5-4311-8d3c-044b6df586a7"> 
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name" class="contact__input" required>
+<dotlottie-player
+  src="https://lottie.host/77bb3d2d-2eb3-4705-947b-1a8b55cdb175/sg6o6NsimM.lottie"
+  background="transparent"
+  speed="1"
+  style="width: 600px; height: 600px"
+  loop
+  autoplay
+></dotlottie-player>
+                    
+                    
+                    
+                    <!-- Contact Form -->
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+                        <input type="hidden" name="access_key" value="006ada1b-4fd5-4311-8d3c-044b6df586a7"> 
+                        
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="contact__input" required>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="contact__input" required>
+                        
+                        <label for="contact_number">Contact Number</label>
+                        <input type="tel" id="contact_number" name="contact_number" placeholder="Your Contact Number" class="contact__input" pattern="[0-9]{10}" required>
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter Your Message" cols="30" rows="10" class="contact__input" required></textarea>
+                        
+                        <button type="submit" class="contact__button button">Submit</button>
+                        
+                        <!-- Feedback Messages -->
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                        <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+                    </form>
+                </div>
+            </section>
             
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email" class="contact__input" required>
-            
-            <label for="contact_number">Contact Number</label>
-            <input type="tel" id="contact_number" name="contact_number" placeholder="Contact Number" class="contact__input" pattern="[0-9]{10}" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Enter Your Message " cols="30" rows="10" class="contact__input" required></textarea>
-            
-            <button type="submit" class="contact__button button">Submit</button>
-            
-            <!-- Feedback Messages -->
-            <div class="invalid-feedback">Please fill out this field.</div>
-            <div class="invalid-feedback">Please enter a valid email address.</div>
-            <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
-        </form>
-    </div>
-</section>
             
             
         </main>
