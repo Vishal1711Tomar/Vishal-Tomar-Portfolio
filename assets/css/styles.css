@@ -29,13 +29,22 @@
 
 body {
   /* background: linear-gradient(to bottom, #ffffff 0%, #ccccff 100%); */
-   background-image: url(../img/background.jpg);  
+   /* background-image: url(../img/background.jpg);   */
   background-size: 100%;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif; 
 
+}
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(ellipse at center, #0a0f1c 0%, #000000 100%);
 }
 
 @media screen and (min-width: 968px) {
