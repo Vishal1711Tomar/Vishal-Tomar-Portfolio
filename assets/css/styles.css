@@ -119,7 +119,6 @@ img {
   padding-bottom: 2rem;
 }
 
-
 /*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
@@ -281,39 +280,28 @@ img {
 }
 
 /* ===== ABOUT =====*/
-.about__title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+.about__container {
+  row-gap: 2rem;
+  text-align: center;
 }
-
-.about__role {
-  font-size: 1.2rem;
-  color: #00f2ff;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
+.about__subtitle {
+  margin-bottom: var(--mb-2);
 }
+.about__img {
+  justify-self: center;
+  overflow: hidden;
 
-.about__text {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #d0d0d0;
 }
-
-#background-video {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  opacity: 0.1;
-  object-fit: cover;
+.about__img img {
+  width: 200px;
+  border-radius: 0.5rem; transition: 1s;
 }
-
+.about__img img:hover {
+  transform: scale(1.1); 
+}
 
 /* ===== SKILLS =====*/
-/* .skills__container {
+.skills__container {
   row-gap: 2rem;
   text-align: center;
   
@@ -374,39 +362,7 @@ img {
 }
 .skills__img {
   border-radius: 0.5rem;
-} */
-.skills_bar {
-  height: 8px;
-  background-color: #272727;
-  border-radius: 10px;
-  margin-top: 8px;
-  position: relative;
-  overflow: hidden;
 }
-.skills_bar::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: linear-gradient(135deg, #00ffcc, #0066ff);
-  width: 0%;
-  animation: fillBar 2s ease-in-out forwards;
-}
-@keyframes fillBar {
-  to { width: var(--skill-level); }
-}
-
-/* Set skill levels */
-.skills_dotnet::after     { --skill-level: 40%; }
-.skills_react::after      { --skill-level: 50%; }
-.skills_golang::after     { --skill-level: 20%; }
-.skills_c::after          { --skill-level: 70%; }
-.skills_angular::after    { --skill-level: 65%; }
-.skills_frontend::after   { --skill-level: 75%; }
-.skills_unity::after      { --skill-level: 90%; }
-.skills_sql::after        { --skill-level: 65%; }
-
 .containers {
   position: relative;
 }
@@ -501,102 +457,38 @@ img {
 
 
 /* ===== CONTACT =====*/
-/* Section styles */
-.contact {
- 
-  padding: 50px 0;
-  color: #fff;
-}
-
-/* Container for form and image */
-.contact__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-
-/* Contact Image (Lottie Animation) */
-.contact__image {
-  flex: 1;
-  max-width: 400px;
-  height: 100%;
-}
-
-/* Form styles */
-.contact__form {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  width: 100%;
-}
-
-/* Form Input Fields */
 .contact__input {
   width: 100%;
-  padding: 12px 15px;
-  margin: 10px 0;
-  background: transparent;
-  border: 2px solid #00ff00;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 1rem;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid var(--second-color);
   outline: none;
-  transition: all 0.3s ease-in-out;
+  margin-bottom: var(--mb-4);
 }
-
-.contact__input:focus {
-  border-color: #00bcd4;
-  box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
-}
-
-/* Button styles */
 .contact__button {
-  background: #00bcd4;
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 12px 20px;
-  border-radius: 5px;
+  display: block;
   border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
   cursor: pointer;
-  transition: background 0.3s ease-in-out;
+  margin-left: auto;
+}
+.contact__input:invalid {
+  border-color: #dc3545; /* Red border for invalid input */
 }
 
-.contact__button:hover {
-  background: #00ff00;
-  transform: scale(1.05);
-}
-
-/* Label styles */
-label {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-}
-
-/* Invalid Feedback */
 .invalid-feedback {
   display: none;
-  font-size: 0.9rem;
-  color: #ff3333;
+  color: #dc3545; /* Red color for feedback messages */
+  font-size: 0.875rem;
+  margin-top: 5px;
 }
 
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-  .contact__container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact__form {
-    padding: 20px;
-    width: 100%;
-  }
+.contact__input:invalid + .invalid-feedback {
+  display: block;
 }
-
 
 .footer {
   background: linear-gradient(145deg, #0e1a2b, #000000);
