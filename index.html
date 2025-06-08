@@ -53,33 +53,36 @@
 
         <main class="l-main">
         
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
+      <!--===== ABOUT =====-->
+<section class="about section" id="about">
+    <h2 class="section-title">About</h2>
 
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/ABout-removebg-preview.png" alt="">
-                </div>
-                
-                <div>
-                    <h2 class="">Hi,<br>I'm <span class="home__title-color">VISHAL TOMAR</span></h2><h4> Programmer Analyst<br> Specialized Game Developer </h4>
-                    <p class="about__text">
-                        Welcome to the world of innovation and immersive experiences! I'm a passionate game developer specializing in Unity 3D,
-                         where I craft captivating games and applications that push the boundaries of creativity and technology.
-                          With expertise in augmented reality, voice control, block games, and FPS shooting games, 
-                          I thrive on delivering unforgettable gaming adventures. Beyond gaming, 
-                          I bring a wealth of corporate experience as a programmer analyst, 
-                          delving into Dotnet, Angular, and SQL to create robust and dynamic solutions. Join me on an exciting journey where imagination meets cutting-edge technology!</p>  
-                          <a href="https://drive.google.com/file/d/1rxjdjxpJNsDzmiIjlj1DuYd1E6UzeHvj/view?usp=sharing" class="button">Download Resume</a>         
-                </div>                                   
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="assets/img/ABout-removebg-preview.png" alt="Profile Image">
+        </div>
+
+        <div>
+            <h2>Hi,<br>I'm <span class="home__title-color">VISHAL TOMAR</span></h2>
+            <h4>Programmer Analyst | Game Developer | Frontend Web Developer</h4>
+            <p class="about__text">
+                Welcome to the world of innovation and immersive experiences! I'm a passionate game developer specializing in Unity 3D, where I craft captivating games and applications across AR, voice control, and FPS genres. Alongside this, I’m a skilled Frontend Web Developer with hands-on experience in Angular and modern UI frameworks. My dual focus lets me bridge the gap between game logic and user interfaces, delivering seamless and dynamic digital solutions. Let’s build something amazing together — whether it’s a game or a web app!
+            </p>
+
+            <!-- Dual Resume Buttons -->
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://drive.google.com/file/d/1fLG_49ee6Bi38ERIrTfnglkvy-ShEzvI/view?usp=drive_link" class="button" target="_blank">Download Game Dev Resume</a>
+                <a href="https://drive.google.com/file/d/1yKMx5Ggu7sQtsA7ulLnYnDmmtJ_ob0eg/view?usp=sharing" class="button" target="_blank">Download Web Dev Resume</a>
             </div>
-            <video id="background-video" autoplay loop muted>
-                <source src="/assets/video/Backgroundvideo.mp4" type="video/mp4">
-            
-                Your browser does not support the video tag.
-            </video>
-        </section>
+        </div>
+    </div>
+
+    <video id="background-video" autoplay loop muted>
+        <source src="/assets/video/Backgroundvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
        
 
         <!--===== SKILLS =====-->
@@ -180,13 +183,19 @@ daily stand-ups.
                 </div>
             </section>
 
+
             <!--===== Projects =====-->
             <section class="work section" id="work">
                 <h2 class="section-title">Projects</h2>
+                <div class="project-filters">
+      <button class="filter-btn" onclick="filterProjects('all')">All</button>
+      <button class="filter-btn" onclick="filterProjects('web')">Web Projects</button>
+      <button class="filter-btn" onclick="filterProjects('game')">Game Projects</button>
+    </div>
                 <div class="project-grid" id="projectContainer">
               
                   <!-- Project Card -->
-                  <div class="project-card">
+                  <div class="project-card" data-type="game">
                     <div class="video-wrapper">
                       <video src="./assets/video/2DGame.mp4" controls muted autoplay></video>
                     </div>
@@ -201,7 +210,47 @@ daily stand-ups.
                       <a href="https://github.com/Vishal1711Tomar/DashBounceGame" class="project-link" target="_blank">Project GitHub Link</a>
                     </div>
                   </div>
-              
+                  <div class="project-card" data-type="web">
+  <div class="video-wrapper">
+    <video src="./assets/video/BiteBloom.mp4" controls muted autoplay></video>
+  </div>
+  <div class="project-info">
+    <h3>BiteBloom 🍽️</h3>
+    <p>Full-Stack Food Ordering Web App<br>
+      • User & Admin authentication with role-based login/signup. <br>
+      • Browse and search Indian dishes with descriptions and prices. <br>
+      • Add dishes to cart, adjust quantities, and place orders. <br>
+      • Users can view their Order History and rate dishes post-order. <br>
+      • Admins can add, edit, and delete dishes through a dashboard. <br>
+      • Cart persists via localStorage. <br>
+      • Passwords are encrypted for secure login. <br>
+      • Clean UI with React Bootstrap & responsive design. <br>
+      • Backend powered by JSON server for RESTful APIs.</p>
+    <a href="https://github.com/Vishal1711Tomar/BiteBloom" class="project-link" target="_blank">Project GitHub Link</a>
+  </div>
+</div>
+<div class="project-card" data-type="web">
+  <div class="video-wrapper">
+    <video src="./assets/video/ExpenseTracker.mp4" controls muted autoplay></video>
+  </div>
+  <div class="project-info">
+    <h3>Expense Tracker 💸</h3>
+    <p>Modular React App for Personal Finance Management<br>
+      • Add and delete income/expense transactions with category tagging. <br>
+      • View budget summaries with pie and bar chart visualizations. <br>
+      • Category-wise analytics to track spending behavior. <br>
+      • State managed via Context API and Reducers. <br>
+      • Data persistence using localStorage. <br>
+      • Modular and reusable components. <br>
+      • Responsive UI with custom styling and chart libraries. <br>
+      • Multi-page navigation using React Router. <br>
+    </p>
+    <a href="https://github.com/Vishal1711Tomar/FinanceTrackerApplication" class="project-link" target="_blank">Project GitHub Link</a>
+  </div>
+</div>
+
+
+    
                   <!-- <div class="project-card">
                     <div class="video-wrapper">
                       <video src="./assets/video/Portfolio.mp4" controls muted></video>
@@ -215,7 +264,7 @@ daily stand-ups.
                     </div>
                   </div> -->
               
-                  <div class="project-card">
+                  <div class="project-card" data-type="game">
                     <div class="video-wrapper">
                       <video src="./assets/video/Zombie.mp4" controls muted  autoplay></video>
                     </div>
@@ -230,7 +279,7 @@ daily stand-ups.
                     </div>
                   </div>
               
-                  <div class="project-card">
+                  <div class="project-card" data-type="game">
                     <div class="video-wrapper">
                       <video src="./assets/video/Crashing.mp4" controls muted  autoplay></video>
                     </div>
@@ -245,7 +294,7 @@ daily stand-ups.
                     </div>
                   </div>
               
-                  <div class="project-card">
+                  <div class="project-card" data-type="game">
                     <div class="video-wrapper">
                       <video src="./assets/video/Voice Control.mp4" controls muted  autoplay></video>
                     </div>
@@ -259,7 +308,7 @@ daily stand-ups.
                     </div>
                   </div>
               
-                  <div class="project-card">
+                  <div class="project-card" data-type="game">
                     <div class="video-wrapper">
                       <video src="./assets/video/augmented.mp4" controls muted  autoplay></video>
                     </div>
@@ -273,7 +322,7 @@ daily stand-ups.
                     </div>
                   </div>
               
-                  <div class="project-card">
+                  <div class="project-card" data-type="game">
                     <div class="video-wrapper">
                       <video src="./assets/video/BlockRUn.mp4" controls muted  autoplay></video>
                     </div>
@@ -287,7 +336,7 @@ daily stand-ups.
                     </div>
                   </div>
               
-                  <div class="project-card">
+                  <div class="project-card" data-type="web">
                     <div class="video-wrapper">
                       <video src="./assets/video/Oishi Food Website.mp4" controls muted  autoplay></video>
                     </div>

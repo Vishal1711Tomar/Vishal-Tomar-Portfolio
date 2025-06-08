@@ -105,6 +105,19 @@ function showSlides(n) {
     
     slides[slideIndex-1].style.display = "flex";  
 }
+function filterProjects(type) {
+  const cards = document.querySelectorAll('.project-card');
+
+  cards.forEach(card => {
+    const cardType = card.getAttribute('data-type');
+
+    if (type === 'all' || cardType === type) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
 
 
       
