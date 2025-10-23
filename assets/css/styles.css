@@ -814,3 +814,41 @@ img {
 .filter-btn:hover {
   background-color: #0056b3;
 }
+.neon-frame {
+  position: relative;
+  display: inline-block;
+  background: white;               /* White slip behind image */
+  padding: 12px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.neon-frame::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #00ffff, #ff00ff, #ffff00, #00ffff);
+  background-size: 300% 300%;
+  animation: neonRun 4s linear infinite;
+  z-index: 0;
+}
+
+.neon-frame img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* white glow */
+}
+
+@keyframes neonRun {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
